@@ -1,0 +1,21 @@
+demo\_repo.integration\_tests package
+=====================================
+
+Submodules
+----------
+
+demo\_repo.integration\_tests.service\_integration\_test module
+---------------------------------------------------------------
+
+.. automodule:: demo_repo.integration_tests.service_integration_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: demo_repo.integration_tests
+   :members:
+   :undoc-members:
+   :show-inheritance:

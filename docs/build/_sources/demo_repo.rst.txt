@@ -1,0 +1,53 @@
+demo\_repo package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   demo_repo.integration_tests
+
+Submodules
+----------
+
+demo\_repo.counter module
+-------------------------
+
+.. automodule:: demo_repo.counter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+demo\_repo.counter\_test module
+-------------------------------
+
+.. automodule:: demo_repo.counter_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+demo\_repo.service module
+-------------------------
+
+.. automodule:: demo_repo.service
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+demo\_repo.service\_test module
+-------------------------------
+
+.. automodule:: demo_repo.service_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: demo_repo
+   :members:
+   :undoc-members:
+   :show-inheritance:

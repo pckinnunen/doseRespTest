@@ -1,0 +1,7 @@
+demo_repo
+=========
+
+.. toctree::
+   :maxdepth: 4
+
+   demo_repo

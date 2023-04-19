@@ -1,0 +1,4 @@
+#!/bin/bash
+# See https://docs.google.com/document/d/1xT5Ay4Ua7F5cX_-tG9iEuOd7B0yTREuAh47GkKAlZt8/edit#
+
+open docs/build/index.html

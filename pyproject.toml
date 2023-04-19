@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "Demo_Repo"
+description = """An example repository that describes how to set up basic tools for good code \
+    health."""
+# https://pypi.org/classifiers/
+classifiers = [
+    # start new projects at the pre-alpha level
+    "Development Status :: 3 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Scientific Engineering",
+    "Intended Audience :: Application",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    # Prevent upload to PyPi until license is determined
+    "Private :: Do Not Upload",
+]
+authors = ["Bret Peterson <bretpeterson@lbl.gov>", "Mark Forrer <mark.forrer@lbl.gov>"]
+maintainers = ["Mark Forrer <mark.forrer@lbl.gov>", "Hector Garcia Martin <hgmartin@lbl.gov>"]
+readme = "README.md"
+homepage = ""
+repository="https://github.com/JBEI/DemoRemo"
+# version: 0.0.0. is a placeholder. Git tags denote version numbers via
+# the poetry-dynamic-versioning plugin configured below.
+version = "0.0.0"
+license = "Proprietary"
+
+# Production code dependencies (none beyond Python for this demo project).
+[tool.poetry.dependencies]
+python = "~3.10.6"
+
+# Development dependencies (only needed @ development time)
+[tool.poetry.group.dev]
+optional = true
+[tool.poetry.group.dev.dependencies]
+coverage = "*"
+runipy = "*"
+mock = "*"
+mypy = "*"
+pytest = "*"
+
+# Configure poetry-dynamic-versioning plugin.
+# Derives release numbers from git tags.
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+dirty = true  # include "dirty" in the release name if there are uncommitted changes
+strict = true # fail if there's no version tag
+
+[build-system]
+requires = ["poetry-core>=1.2.2", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
